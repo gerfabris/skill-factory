@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.grandparentContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+.parentContainer1 {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+}
+
+.childContainer1 {
+    background-color: #F0223B;
+    border: 1px solid black;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.childContainer2 {
+    background-color: #FA23A9;
+    border: 1px solid black;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
+}
+
+.parentContainer2 {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.childContainer3 {
+    background-color: #8D0E96;
+    border: 1px solid black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+
+#column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.childContainer4 {
+    background-color: #14E3B5;
+    border: 1px solid black;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.childContainer44 {
+    background-color: #15967A;
+    border: 1px solid black;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.parentContainer3 {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.childContainer5 {
+    background-color: #D72BE3;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.childContainer6 {
+    background-color: #F34AFF;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 5px;
+}
+
+.childContainer7 {
+    background-color: #7BE32B;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5px;
+}
