@@ -14,14 +14,20 @@ const object = {
 }
 
 //Programa pedir números
-/* const validate = (input) => {
-    if(parseInt(input)){
-        input = input;
-        alert("El número ingresado es correcto")
-    } else{
-        alert("El input no es correcto, ingrese nuevamente");
-        input = prompt("Coloca un número")
-    };
+
+let validation = false;
+const validate = (input) => {
+    while(!validation){
+        if((input === Number)){
+            input = input;
+            alert("El número ingresado es correcto")
+            break
+        } else{
+            alert("El input no es correcto, ingrese nuevamente");
+            input = prompt("Coloca un número")
+        };
+        return input
+    }
 };
 
 let input1 = prompt("Coloca un número");
@@ -39,7 +45,7 @@ const compare = (num1,num2) => {
     };
 };
 
-compare(input1,input2); */
+compare(input1,input2);
 
 //Métodos arrays
 
