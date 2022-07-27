@@ -15,18 +15,19 @@ const object = {
 
 //Programa pedir números
 
-let validation = false;
+
 const validate = (input) => {
+    let validation = false;
     while(!validation){
-        if((input === Number)){
-            input = input;
+        if(!isNaN(input)){
+            input = parseInt(input);
             alert("El número ingresado es correcto")
-            break
+            validation = true
+            return input
         } else{
             alert("El input no es correcto, ingrese nuevamente");
             input = prompt("Coloca un número")
         };
-        return input
     }
 };
 
