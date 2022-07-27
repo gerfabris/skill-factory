@@ -15,14 +15,15 @@ const object = {
 
 //Programa pedir números
 
-
-const validate = (input) => {
+const validate = () => {
     let validation = false;
+    let input = prompt("Coloca un número");
     while(!validation){
         if(!isNaN(input)){
             input = parseInt(input);
             alert("El número ingresado es correcto")
             validation = true
+            console.log(input);
             return input
         } else{
             alert("El input no es correcto, ingrese nuevamente");
@@ -31,10 +32,8 @@ const validate = (input) => {
     }
 };
 
-let input1 = prompt("Coloca un número");
-validate(input1);
-let input2 = prompt("Coloca un número");
-validate(input2);
+const num1 = validate();
+const num2 = validate();
 
 const compare = (num1,num2) => {
     if(num1 > num2){
@@ -46,7 +45,7 @@ const compare = (num1,num2) => {
     };
 };
 
-compare(input1,input2);
+compare(num1,num2);
 
 //Métodos arrays
 
